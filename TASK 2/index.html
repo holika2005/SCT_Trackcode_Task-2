@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Stopwatch Web Application</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-container" role="timer">
+        <div class="main-stopwatch-section"> <h1>STOPWATCH WEB APPLICATION</h1>
+            <div id="current-date" class="current-date"></div>
+            <div class="stopwatch-display" aria-live="polite" aria-atomic="true">
+                 <span id="minutes">00</span>:<span id="seconds">00</span>:<span id="milliseconds">00</span>
+            </div>
+            <div class="controls">
+                <button id="start-btn" aria-label="Start stopwatch">Start</button>
+                <button id="pause-btn" aria-label="Pause stopwatch">Pause</button>
+                <button id="reset-btn" aria-label="Reset stopwatch">Reset</button>
+                <button id="lap-btn" aria-label="Record lap time">Lap</button>
+                <button id="export-btn" aria-label="Export lap times to CSV">Export Laps</button>
+                <button id="theme-toggle-btn" class="theme-toggle" aria-label="Toggle light and dark theme">Toggle Theme</button>
+            </div>
+        </div> <div class="lap-times">
+            <h2>Lap History</h2>
+            <ul id="lap-list" role="log" aria-live="polite">
+            </ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
